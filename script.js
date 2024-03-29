@@ -34,7 +34,6 @@ for (var i = 0; i < bars.length; i++) {
   const day = data[i];
   const bar = bars[i];
   bar.setAttribute('data-amount', day.amount)
-  let h = day.amount / 100 * 200
-  bar.style.setProperty('--h', h + 'px')
-  bar.style.setProperty('--d', 500 + 30 * i + 'ms')
+  bar.style.setProperty('--h', day.amount)
+  bar.style.setProperty('--d', 500 + 40 * i + 'ms')
 }
